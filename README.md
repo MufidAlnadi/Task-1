@@ -11,7 +11,7 @@ This is a simple web application built using Node.js (Express), PostgreSQL (Sequ
 ## Installation Instructions
 
 ### Prerequisites:
-- **Node.js** (v14.x or higher)
+- **Node.js** 
 - **Docker** (for running PostgreSQL in a container)
 - **Docker Compose** (to manage multi-container Docker applications)
 
@@ -19,7 +19,7 @@ This is a simple web application built using Node.js (Express), PostgreSQL (Sequ
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/repository-name.git
+    git clone https://github.com/MufidAlnadi/Task-1
     cd repository-name
     ```
 
