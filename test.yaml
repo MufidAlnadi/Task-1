@@ -1,0 +1,24 @@
+config:
+  target: 'http://localhost:3000' 
+  phases:
+    - duration: 1000
+      arrivalRate: 50 
+
+scenarios:
+  - flow:
+      
+      - put:
+          url: '/users/update-balance'
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAzMjQ0YTIzLWFlZmItNDk2NC1iNTMwLTMzMWVhNTc3YTA0OSIsImVtYWlsIjoiMmRzcy5kb2VAZXhhbXBsZS5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDEzNDc2MzcsImV4cCI6MTc0MjU1NzIzN30.ONDfK9S8jhwM4h2eHNsLAtkkc_498O-ofZBBcXrk7H8' # Replace with your actual token
+          json:
+            userId: '3d477e19-2a43-449b-a68a-44cdc8816610' 
+            amount: 2 
+
+      - put:
+          url: '/users/update-balance'
+          headers:
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjAzMjQ0YTIzLWFlZmItNDk2NC1iNTMwLTMzMWVhNTc3YTA0OSIsImVtYWlsIjoiMmRzcy5kb2VAZXhhbXBsZS5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDEzNDc2MzcsImV4cCI6MTc0MjU1NzIzN30.ONDfK9S8jhwM4h2eHNsLAtkkc_498O-ofZBBcXrk7H8'
+          json:
+            userId: 'bf47f2ef-cd1f-4f0a-9b73-b9c84a7f5a31' 
+            amount: -2 

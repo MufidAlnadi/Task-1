@@ -1,0 +1,7 @@
+{
+  "watch": ["bin", "controllers", "models", "routes", "services", "middleware"],
+  "ext": "js,json",
+  "ignore": ["node_modules", "logs", "coverage", "*.test.js"],
+  "exec": "node --inspect=0.0.0.0:9229 bin/server.js",
+  "verbose": true
+}
